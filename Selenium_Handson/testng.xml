@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<groups>
+<run>
+<include name="mandatory"/>
+</run>
+</groups>
+  <test thread-count="1" name="Test" parallel="methods">
+    <classes>
+    
+      <class name="com.wipro.selenium.Task1A1"/>
+      <class name="com.wipro.selenium.Task1A2"/>
+      <class name="com.wipro.selenium.Task1A3"/>
+    <class name="com.wipro.selenium.Task1A4"/>
+    <class name="com.wipro.selenium.Task1A5"/>
+    <class name="com.wipro.selenium.Task1A6"/>
+   <class name="com.wipro.selenium.Task2A1"/>
+   <class name="com.wipro.selenium.Task2A2"/>
+    <class name="com.wipro.selenium.Task3A1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

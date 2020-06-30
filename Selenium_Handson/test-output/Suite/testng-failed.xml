@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <groups>
+    <run>
+      <include name="mandatory"/>
+    </run>
+  </groups>
+  <test thread-count="1" name="Test" parallel="methods">
+    <classes>
+      <class name="com.wipro.selenium.Task1A1"/>
+      <class name="com.wipro.selenium.Task1A2"/>
+      <class name="com.wipro.selenium.Task1A3"/>
+      <class name="com.wipro.selenium.Task1A4"/>
+      <class name="com.wipro.selenium.Task1A5"/>
+      <class name="com.wipro.selenium.Task1A6"/>
+      <class name="com.wipro.selenium.Task2A1"/>
+      <class name="com.wipro.selenium.Task2A2"/>
+      <class name="com.wipro.selenium.Task3A1"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="mandatory"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.wipro.selenium.Task1A2">
+        <methods>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task1A2 -->
+      <class name="com.wipro.selenium.Task1A6">
+        <methods>
+          <include name="test6"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task1A6 -->
+      <class name="com.wipro.selenium.Task1A3">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task1A3 -->
+      <class name="com.wipro.selenium.Task1A4">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task1A4 -->
+      <class name="com.wipro.selenium.Task3A1">
+        <methods>
+          <include name="testq"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task3A1 -->
+      <class name="com.wipro.selenium.Task1A5">
+        <methods>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- com.wipro.selenium.Task1A5 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
