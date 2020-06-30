@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 import org.testng.Reporter;
 public class Task1A1 extends Base{
 
-//Create a xpath or Css path for this Selectable Item and Click on each of the Items and print the Item Name.
+//Create a xpath or Css path for this Selectable Item and Click on each of the Items and print the Item Name
 		    @Test(groups= {"mandatory","Assignment1"})
 		    public void test1() throws IOException 
 		    {
